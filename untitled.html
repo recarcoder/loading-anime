@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+<div id="main" class="main">
+	<div class="sec"><div class="thd"><div class="for"></div></div></div>
+</div>
+<h1 id="head" class="head">Loading...</h1>
+
+<style type="text/css" media="all">
+.pro{
+	float: left;
+	height: 100px;
+	width:100px;
+	border-radius: 50%;
+	background-color:rgba(183,188,189,0.591);
+	display: inline;
+}
+
+.main,.sec,.thd,.for{
+	background: linear-gradient(rgba(109,111,111,0.2) 10%,white 60%);
+	margin:0 auto;padding: 0;
+	border-radius: 50%;
+	border-top: 1px solid rgba(79,82,83,0.098);
+	animation-name: rot;
+	animation-iteration-count: infinite;
+	animation-delay: 0.1s;
+	transition: ease-out;
+	d
+}
+#head{
+	color: rgba(163,165,165,0.745);
+	margin:auto;padding: 0;
+	margin-top: 15px;
+	text-align: center;
+}
+@keyframes t{
+	0%{transform:rotate(6deg);}
+	100%{transform:rotate(365deg);}
+}
+.main{
+	height: 30vh;
+	width: 30vh;
+	animation-duration: 4s;
+  margin-top: 20vh;
+}
+.sec{
+	margin: 2.5vh;
+	height: 25vh;
+	width: 25vh;
+	animation-duration: 3s;
+}
+.thd{
+	margin: 2.5vh;
+	height: 20vh;
+	width: 20vh;
+	animation-duration: 2s;
+}
+.for{
+	background: white;
+	margin: 2.5vh;
+	height: 15vh;
+	width: 15vh;
+	animation-duration: 5s;
+}
+</style>
+<script type="text/javascript" charset="utf-8">
+	setTimeout(function io(){
+		document.getElementById('main').style.display = 'none';
+		document.getElementById('head').style.display = 'none';
+		document.getElementById('body').style.display = 'block';
+	},4000);
+</script>
+</body>
+</html>
